@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root{
+            --hover-x: cadetblue;
+            --hover-john: cornflowerblue;
+            --x-text-color: black;
+            --john-text-color: black;
+            --pointer-events-value: all;
+        }
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            margin-bottom: 0;
+        }
+
+
+        .voiceline {
+            cursor: pointer;
+            pointer-events: var(--pointer-events-value);
+        }
+
+        #john_titor_line{
+            color: var(--john-text-color);
+        }
+
+        #X_line{
+            color: var(--x-text-color);
+        }
+
+        #john_titor_line:hover{
+            color: var(--hover-john);
+        }
+
+        #john_titor_line:active, #X_line:active{
+            opacity: 0.4;
+        }
+
+        #X_line:hover{
+            color: var(--hover-x);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>VOICELINE TEST</h1>
+    <div id="p_one" class="translate-child">
+        <p><span class="voiceline" id="john_titor_line" onclick="playVoiceline('john', '1', 'cornflowerblue')">&quot;48756D6964697479626164666F727063. Translation: (Humidity, bad for pc.)&quot;</span>, John Titor said. 
+        <span class="voiceline" id="X_line" onclick="playVoiceline('x', '1', 'cadetblue')">"Everything in the world is born of laws and regulations. There are no coincidences, let alone adventures.
+        There are only expected results, such as our encounter."</span>, X randomly says</p>
+    </div>
+
+     <script src="play_audio.js"></script>
+</body>
+</html>
