@@ -5,147 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" typw="image/png" href="images/icon.png">
-    <style>
-
-        :root{
-            --navigation-color: rgba(0, 0, 0, 0.2);
-        }
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        html{
-            scroll-behavior: smooth;
-        }
-
-        body{
-            background-color: white;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        #navigation-bar{
-            position: fixed;
-            top: 0; left: 0;
-            background-color: var(--navigation-color);
-            width: 100%;
-            padding: 10px 100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            user-select: none;
-            transition: 1s;
-        }
-
-        .logo{
-            color: darkcyan;
-            font-size: 30px;
-        }
-
-        .navigation a{
-            text-decoration: none;
-            color: black;
-            padding: 6px 15px;
-            border-radius:  20px;
-            margin: 0 10px;
-            transition: 250ms;
-        }
-
-        .navigation a:hover{
-            background-color: darkcyan;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-            color: white;
-        }
-
-        .navigation a:active{
-            opacity: 0.3;
-        }
-
-        .invisible-element{
-            width: 100px; height: 50px;
-            background-color: none;
-
-        }
-
-
-        main{
-            background-color: white;
-            text-align: center;
-            text-align: justify;
-            width: 100%;
-            padding-left: 25%; padding-right: 25%;
-            padding-top: 20px;
-
-        }
-
-        .parallax {
-            background-image: url("images/background.jpg");
-            min-height: 100vh; 
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .heading-1{
-            text-align: center;
-            font-size: large;
-            font-weight: 600;
-            margin-top: 50px;margin-bottom: 10px;
-        }
-
-        .horizontal-line{
-            margin-bottom: 10px;
-        }
-
-        .main-page-paragraph{
-            margin-top: 10px;margin-bottom: 10px;
-        }
-
-        footer{
-            background-color: #f4f4f4;
-            text-align: center;
-            color: gray;
-            margin-top: 20px;
-            padding: 20px;
-            font-size: small;
-        }
-
-        div.credits{
-            text-align: center
-        }
-
-        div.wrapper{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        div.content-card{
-            margin-left: 10px; margin-right: 10px;
-            width: 200px; height: 340px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        }
-
-        .content-image{
-            object-fit: cover;
-            max-width: 100%; height: auto;
-        }
-
-        .subtitle{
-            margin-top: 10px;
-            color: lightslategray;
-            font-size: small;
-        }
-
-        .credits-line{
-            width: 50%;
-            
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="stylesheets/homepage_style.css"/>
 </head>
 <body>
     <div class="parallax" id="Home"></div>
@@ -154,79 +14,52 @@
         <h1 class="logo">Logo</h1>
         <nav class="navigation">
             <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Stories">Stories</a>
+            <a href="#plot">Banghay</a>
+            <a href="#tauhan">Tauhan</a>
         </nav>
         <div class="invisible-element"></div>
     </header>
-    <main id="About">
+
+    <main id="plot">
         <h1 class="heading-1">
-            About
+            BANGHAY (PLOT)
         </h1>
         <hr class="horizontal-line"/>
         <p class="main-page-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Eget mi proin sed libero enim sed. Leo integer malesuada nunc vel risus commodo viverra. Sit amet aliquam id diam maecenas ultricies mi eget. 
-            Accumsan tortor posuere ac ut consequat. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Enim lobortis scelerisque fermentum dui. 
-            Nibh nisl condimentum id venenatis. Morbi tristique senectus et netus et. Nec tincidunt praesent semper feugiat nibh sed pulvinar. 
-            Fermentum iaculis eu non diam phasellus vestibulum lorem. Aliquet enim tortor at auctor urna nunc id. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse. 
-            Bibendum enim facilisis gravida neque convallis a cras semper auctor.
-            Ac tincidunt vitae semper quis lectus nulla at volutpat. Purus in massa tempor nec feugiat. 
-            Fames ac turpis egestas integer. Ultrices dui sapien eget mi proin. Fringilla phasellus faucibus scelerisque eleifend donec. 
-            Elementum nisi quis eleifend quam. Duis at consectetur lorem donec massa sapien. Tristique senectus et netus et malesuada. 
-            Tristique nulla aliquet enim tortor at auctor urna nunc. Nisl nunc mi ipsum faucibus. 
-            Condimentum lacinia quis vel eros donec ac odio tempor.</p>
-        <p class="main-page-paragraph">
-            Parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer. 
-            Ut placerat orci nulla pellentesque dignissim. Augue neque gravida in fermentum et. 
-            Convallis posuere morbi leo urna molestie at elementum eu. Sapien eget mi proin sed. 
-            Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Urna porttitor rhoncus dolor purus non enim. 
-            Id porta nibh venenatis cras. Eget nunc lobortis mattis aliquam faucibus purus. Habitant morbi tristique senectus et netus et malesuada fames ac. 
-            Purus non enim praesent elementum facilisis leo vel. Maecenas accumsan lacus vel facilisis volutpat est velit. 
-            Aliquam sem et tortor consequat id porta nibh. Accumsan tortor posuere ac ut. Ullamcorper a lacus vestibulum sed. 
-            Tincidunt praesent semper feugiat nibh. Nisi est sit amet facilisis.
-        </p>
-        <p class="main-page-paragraph">
-            Imperdiet dui accumsan sit amet nulla facilisi morbi. Id donec ultrices tincidunt arcu non sodales neque sodales. 
-            Justo nec ultrices dui sapien eget mi. Amet nisl suscipit adipiscing bibendum est ultricies. 
-            Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Sed tempus urna et pharetra pharetra massa massa ultricies mi. 
-            Ipsum dolor sit amet consectetur. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. 
-            Ipsum consequat nisl vel pretium lectus. Etiam sit amet nisl purus in mollis nunc. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. 
-            Pretium lectus quam id leo in vitae turpis massa. Eros donec ac odio tempor orci dapibus ultrices. Odio ut enim blandit volutpat maecenas volutpat. 
-            Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Ullamcorper morbi tincidunt ornare massa eget. 
-            Nullam ac tortor vitae purus faucibus ornare suspendisse sed.
-        </p>
-        <p class="main-page-paragraph">
-            Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate. 
-            Ornare arcu dui vivamus arcu felis bibendum ut. Eget mauris pharetra et ultrices neque ornare aenean. 
-            A lacus vestibulum sed arcu non odio euismod lacinia at. Malesuada bibendum arcu vitae elementum curabitur vitae. 
-            Nec tincidunt praesent semper feugiat nibh sed pulvinar. Sed velit dignissim sodales ut eu sem. Nunc eget lorem dolor sed viverra ipsum nunc. 
-            Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
-            Id semper risus in hendrerit gravida. Pretium lectus quam id leo in vitae turpis massa. Nullam ac tortor vitae purus. 
-            Neque viverra justo nec ultrices dui sapien. Dui vivamus arcu felis bibendum.
-        </p>
+            </p>
     </main>
-    <div class="credits">
-        <h3>CREDITS</h3>
-        <hr class="horizontal-line" id="credits-line"/>
+
+    <section class="padding" id="between">
+
+    </section>
+
+    <div id="tauhan" >
+        <h3>TAUHAN</h3>
+        <hr id="credits-line"/>
         <div class="wrapper">
             <div class="content-card">
                 <img src="images/bird_logo.jpg" alt="" class="content-image">
-                <h3>FIRST NAME LAST NAME</h3>
-                <div class="subtitle">ROLE</div>
+                <h3>Character Name</h3>
+                <div class="subtitle">Character description</div>
             </div>
             <div class="content-card">
                 <img src="images/bird_logo.jpg" alt="" class="content-image">
-                <h3>FIRST NAME LAST NAME</h3>
-                <div class="subtitle">ROLE</div>
+                <h3>Character Name</h3>
+                <div class="subtitle">Character description</div>
             </div>
             <div class="content-card">
                 <img src="images/bird_logo.jpg" alt="" class="content-image">
-                <h3>FIRST NAME LAST NAME</h3>
-                <div class="subtitle">ROLE</div>
+                <h3>Character Name</h3>
+                <div class="subtitle">Character description</div>
             </div>
-
         </div>
     </div>
+
+    <section class="padding">
+
+    </section>
+
     <footer>
         PANGKAT 5
     </footer>

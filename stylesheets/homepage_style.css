@@ -1,0 +1,158 @@
+:root{
+    --navigation-color: rgba(0, 0, 0, 0.2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation-bar{
+    position: fixed;
+    top: 0; left: 0;
+    background-color: var(--navigation-color);
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    transition: 1s;
+}
+
+.logo{
+    color: darkcyan;
+    font-size: 30px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: black;
+    padding: 6px 15px;
+    border-radius:  20px;
+    margin: 0 10px;
+    transition: 250ms;
+}
+
+.navigation a:hover{
+    background-color: darkcyan;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.navigation a:active{
+    opacity: 0.3;
+}
+
+.invisible-element{
+    width: 100px; height: 50px;
+    background-color: none;
+
+}
+
+
+#plot{
+    background-color: white;
+    text-align: center;
+    text-align: justify;
+    width: 100%;
+    padding-left: 25%; padding-right: 25%;
+    padding-top: 20vh;
+    scroll-padding-top: 30px;
+
+
+}
+
+.parallax {
+    scroll-snap-align: start;
+    background-image: url("../images/background.jpg");
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-1{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 50px;margin-bottom: 10px;
+}
+
+.horizontal-line{
+    margin-bottom: 10px;
+}
+
+.main-page-paragraph{
+    margin-top: 10px;margin-bottom: 10px;
+    font-size: 2em;
+}
+
+footer{
+    background-color: #f4f4f4;
+    text-align: center;
+    color: gray;
+    padding: 20px;
+    font-size: small; 
+    margin-top: auto;
+}
+
+#tauhan{
+    padding-top: 90px;
+    text-align: center;
+    min-height: fit-content;
+    scroll-padding-top: 50px;
+}
+
+div.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.content-card{
+    margin-left: 20px; margin-right: 20px;
+    width: 350px; height: 450px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content-image{
+    object-fit: cover;
+    max-width: 100%; height: auto;
+}
+
+.subtitle{
+    margin-top: 10px;
+    color: lightslategray;
+    font-size: small;
+}
+
+#credits-line{
+    margin-bottom: 5vh;
+    width: 25%;
+    margin-left: auto;margin-right: auto;
+}
+
+.padding{
+    width: 100%;
+    height: 40vh;
+}
+
+#between{
+    background-color: #f4f4f4;
+}
