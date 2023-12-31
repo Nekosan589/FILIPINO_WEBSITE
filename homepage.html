@@ -16,9 +16,12 @@
             <a href="#Home">Home</a>
             <a href="#plot">Banghay</a>
             <a href="#tauhan">Tauhan</a>
+            <a href="#read">Basahin</a>
         </nav>
         <div class="invisible-element"></div>
     </header>
+
+    
 
     <main id="plot">
         <h1 class="heading-1">
@@ -33,48 +36,37 @@
     <section class="padding" id="between">
 
     </section>
-
     <div id="tauhan" >
         <h3>TAUHAN</h3>
         <hr id="credits-line"/>
         <div class="wrapper">
             <div class="content-card">
-                <img src="images/bird_logo.jpg" alt="" class="content-image">
+                <img src="images/blank.jpg" alt="" class="content-image">
                 <h3>Character Name</h3>
                 <div class="subtitle">Character description</div>
             </div>
             <div class="content-card">
-                <img src="images/bird_logo.jpg" alt="" class="content-image">
+                <img src="images/blank.jpg" alt="" class="content-image">
                 <h3>Character Name</h3>
                 <div class="subtitle">Character description</div>
             </div>
             <div class="content-card">
-                <img src="images/bird_logo.jpg" alt="" class="content-image">
+                <img src="images/blank.jpg" alt="" class="content-image">
                 <h3>Character Name</h3>
                 <div class="subtitle">Character description</div>
             </div>
         </div>
     </div>
 
-    <section class="padding">
-
-    </section>
+    <div class="read">
+        <h4>Basahin na!</h4>
+        <a class="read-button" href="#read">Basahin</a>
+    </div>
 
     <footer>
         PANGKAT 5
     </footer>
     
-    <script>
-        var root = document.querySelector(':root');
-        window.addEventListener("scroll", (event) => {
-            let scroll = this.scrollY;
-            if (scroll > 50){
-                root.style.setProperty('--navigation-color', '#f4f4f4')
-            }
-            else{
-                root.style.setProperty('--navigation-color', 'rgba(0, 0, 0, 0.2)')
-            }
-        });
-    </script>
+    <script src="scripts/homepage_script.js"></script>
 </body>
 </html>

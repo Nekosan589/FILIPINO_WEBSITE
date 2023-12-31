@@ -73,6 +73,7 @@ body{
     padding-left: 25%; padding-right: 25%;
     padding-top: 20vh;
     scroll-padding-top: 30px;
+    margin-bottom: 10vh;
 
 
 }
@@ -117,6 +118,7 @@ footer{
     text-align: center;
     min-height: fit-content;
     scroll-padding-top: 50px;
+    margin-bottom: 10vh;
 }
 
 div.wrapper{
@@ -128,7 +130,7 @@ div.wrapper{
 div.content-card{
     margin-left: 20px; margin-right: 20px;
     width: 350px; height: 450px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.4);
 }
 
 .content-image{
@@ -149,10 +151,47 @@ div.content-card{
 }
 
 .padding{
+    margin-top: 5vh;
     width: 100%;
     height: 40vh;
 }
 
 #between{
     background-color: #f4f4f4;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+.read{
+    margin-top: 10px;margin-bottom: 10vh;
+    text-align: center;
+}
+
+h4{
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+.read-button{
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    padding: 6px 15px;
+    border-radius:  20px;
+    margin: 0 10px;
+    background-color: darkcyan;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    color: white
+}
+
+.read-button:hover{
+    opacity: 0.9;
+
+}
+
+.read-button:active{
+    opacity: 0.4;
 }
