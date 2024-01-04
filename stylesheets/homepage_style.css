@@ -24,42 +24,48 @@ html{
 }
 
 body{
-    background-color: white;
+    background-color: var(--bs-pale-brown);
     min-height: 100vh;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 #navigation-bar{
     position: fixed;
     top: 0; left: 0;
     background-color: var(--navigation-color);
-    width: 100%;
-    padding: 10px 100px;
+    width: 100%; 
+    padding-left: 25vh; padding-right: 25vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     user-select: none;
     transition: 1s;
+    height: 9vh;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
 }
 
 .logo{
+    margin-right: 5vh;
     color: darkcyan;
-    font-size: 30px;
+    font-size: 3vh;
 }
 
 .navigation a{
     text-decoration: none;
     color: black;
-    padding: 6px 15px;
-    border-radius:  20px;
-    margin: 0 10px;
+    padding: 1vh 2vh;
+    border-radius:  10vh;
+    margin: 0 1vh;
     transition: 250ms;
+    font-size: 2vh;
 }
 
 .navigation a:hover{
-    background-color: darkcyan;
+    background-color: var(--bs-light-green);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     color: white;
 }
@@ -69,20 +75,20 @@ body{
 }
 
 .invisible-element{
-    width: 100px; height: 50px;
+    width: 5vh; height: 6vh;
     background-color: none;
 
 }
 
 
 #plot{
-    background-color: white;
+    background-color: var(--bs-pale-brown);
     text-align: center;
     text-align: justify;
     width: 100%;
     min-height: 100vh;
     padding-left: 25%; padding-right: 25%;
-    padding-top: 30vh;
+    padding-top: 24vh;
     scroll-padding-top: 30px;
 }
 
@@ -98,7 +104,7 @@ body{
 
 .heading-1{
     text-align: center;
-    font-size: large;
+    font-size: 2vh;
     font-weight: 600;
     margin-top: 50px;margin-bottom: 10px;
 }
@@ -109,11 +115,11 @@ body{
 
 .main-page-paragraph{
     margin-top: 10px;margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 5vh;
 }
 
 footer{
-    background-color: #ebebeb;
+    background-color: var(--bs-pale-green);
     text-align: center;
     color: gray;
     padding: 20px;
@@ -138,19 +144,23 @@ div.wrapper{
 
 div.content-card{
     margin-left: 20px; margin-right: 20px;
-    width: 350px; height: 450px;
+    width: 50vh; height: 65vh;
     box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.4);
 }
 
 .content-image{
     object-fit: cover;
-    max-width: 100%; height: auto;
+    width: 50vh; height: auto;
 }
 
 .subtitle{
-    margin-top: 10px;
+    margin-top: 2.5vh;
     color: lightslategray;
-    font-size: small;
+    font-size: 1.3vh;
+}
+
+.content-card > h3{
+    font-size: 3vh;
 }
 
 #credits-line{
@@ -160,17 +170,18 @@ div.content-card{
 }
 
 .padding{
+    background-color: var(--bs-white);
     margin-top: 5vh;
     width: 100%;
     height: 40vh;
 }
 
 #between{
-    background-color: #f4f4f4;
+    background-color: var(--bs-white);
 }
 
 h3{
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 
 .read{
