@@ -1,5 +1,15 @@
 :root{
     --navigation-color: rgba(0, 0, 0, 0.2);
+    --bs-brown: #582F0E;
+    --bs-light-brown: #7f4f24;
+    --bs-lighter-brown: #936639;
+    --bs-lightest-brown: #A68A64;
+    --bs-pale-brown: #B6AD90;
+    --bs-white: #C2C5AA;
+    --bs-pale-green: #A4AC86;
+    --bs-light-green: #656D4A;
+    --bs-greyish-green: #414833;
+    --bs-dark-green: #333D29;
 }
 *{
     margin: 0;
