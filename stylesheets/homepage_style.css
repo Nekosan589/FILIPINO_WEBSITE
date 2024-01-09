@@ -128,7 +128,7 @@ footer{
 }
 
 #tauhan{
-    padding-top: 20vh;
+    padding-top: 15.5vh;
     text-align: center;
     min-height: fit-content;
     scroll-padding-top: 50px;
@@ -167,6 +167,7 @@ div.content-card{
     margin-bottom: 5vh;
     width: 25%;
     margin-left: auto;margin-right: auto;
+    border: 1px solid black;
 }
 
 .padding{
@@ -180,13 +181,19 @@ div.content-card{
     background-color: var(--bs-white);
 }
 
-h3{
+.tauhan > h3{
     margin-top: 1vh;
+    font-size: 9vh;
+}
+
+hr{
+    border: 1px solid black;
 }
 
 .read{
     margin-top: 9%;margin-bottom: 10vh;
     text-align: center;
+    padding-top: 16vh;
 }
 
 h4{
